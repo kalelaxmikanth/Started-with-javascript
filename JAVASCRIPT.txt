@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working of DOM</title>
+
+</head>
+<body>
+<!-- by id -->
+    <p id="one"> <span>hello</span> namaste</p>
+<!-- by class -->
+    <ul>
+        <li class="tech">one </li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+    <!-- tag name -->
+    <h4>hey</h4>
+    <h4>namaste</h4>
+    <h4>hola</h4>
+<!-- query selector -->
+<h2>hello</h2>
+<h2 class="classs"> hola</h2>
+<h2 id="ids">hey</h2>
+    <script>
+    let var1 = document.getElementById("one");
+    console.log(var1.innerText);
+    // class
+    let var2 = document.getElementsByClassName("tech")
+    console.log(var2[2].innerText);
+    var2[1].innerText = "nodejs"
+    // tag name
+    let var3 = document.getElementsByTagName("h4")
+    console.log(var3[0].innerText);
+    var3[2].innerText = "pw skills"
+    var3[2].style.color = "red";
+// query selector
+let var4 = document.querySelector(".classs")
+console.log(var4);
+// var4.classList = "hello helo hola";
+var4.setAttribute("id","anurag");
+    </script>
+</body>
+</html>
